@@ -9,7 +9,10 @@ void BagOfHolding::addItem(std::string newItem){
 }
 
 std::string BagOfHolding::removeItem(){
-    
+    int oldIt = rand() % bag.size();
+    item = bag.at(oldIt);
+    bag.erase(oldIt);
+    return item;
 }
 
 std::string BagOfHolding::removeItem(std::string oldItem){
