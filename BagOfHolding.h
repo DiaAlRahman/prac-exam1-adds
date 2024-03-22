@@ -12,6 +12,7 @@ class BagOfHolding{
         BagOfHolding();
 
         void addItem(std::string newItem);
+        std::string removeItem();
         std::string removeItem(std::string oldItem);
 };
 
